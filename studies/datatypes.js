@@ -23,25 +23,26 @@ let number2 = 9.87 //floating point numbers
 // 2. Boolean //
 /*
  * The boolean data type can only have two values such as: true or false, on or off, 
- * yes or no. You can use the 'Boolean()' Function top figure out if an 
+ * yes or no. You can use the 'Boolean()' Function to figure out if an 
  * expression or variable is true or false.
  */
 
 //Example:
-(10 > 9) //returns true
-(30 < 1) //returns false
+(10 > 9) //resolves to true
+(30 < 1) //resolves to false
 Boolean(77 > 54) //returns true
 
 // 3. Null //
 /*
  * The null value is a keyword that represents either no value or nonexistence of 
  * any value. Null is special because it forms a different type that only takes
- * 'null' as a value.
+ * 'null' as a value. Null represents intentional absense of any object value.
+ * Null is a primitive value.
  */
 
 //Example: 
 let data = null
-console.log(data) //returns null
+console.log(data) //logs null
 
 /*
  * This returns null because the console reads that 'data' is nothing or empty
@@ -51,10 +52,10 @@ console.log(data) //returns null
 // 4. Undefined //
 
 /*
- * Undefined is very similar to null for many reasons. First undefined is special
- * because it stands on its own as a data type. So when creating a variable there
- * are two steps: declare and assign. If you do not assign the variable to anything
- * then that variable will become undefined.
+ * Undefined is very similar to null. First undefined is special because it stands
+ on its own as a data type. So when creating a variable there are two steps: 
+ declare and assign. If you do not assign the variable to anything then that
+ variable will become undefined.
  */
 
 //Example:
@@ -141,21 +142,21 @@ var house = neighborhoods[1] //return Mid-City
  
  //Example:
  var y = true;
- isNaN(y);  //return Not-a-Number
+ isNaN(y);  //resolves to Not-a-Number
  
  // 9. Infinity and - Infinity
  /*
   * Infinity is a value that represents positive infinity
   */
  //Example:
- (9/0) // returns positive Infinity
+ (9/0) // resolves to positive Infinity
  
  /*
   * -Infinity is a valur that represents negative infinity
   */
  
  //Example:
- (-9/0) //returns negative infinity
+ (-9/0) //resolves to negative infinity
  
  // 10. Primitive/Simple vs Complex Data types //
  /*
@@ -187,4 +188,17 @@ var house = neighborhoods[1] //return Mid-City
  var reference = [4]
  var refCopy = reference
 
- // 12. Object
+ // 12. Object //
+ /*
+ In Javascript object are written between curly braces '{}'. process of creating 
+ an object in js is to first declare the variable key word followed by the name of 
+ your object. Then using the assignment operator '=' you assign the name of the object
+ to the object. Then you start your curly braces and write name:value pairs, separated 
+ by commas. Objects can have as many keys and values as they want.
+ */
+ 
+ //Example:
+ var obj = {
+     name: 'Nathan', 
+     age: 20, 
+     favColor: 'blue'}

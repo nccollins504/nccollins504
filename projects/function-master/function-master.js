@@ -213,15 +213,10 @@ for(var key in object) {
 //////////////////////////////////////////////////////////////////////
 
 function dedup(array) {
- let unique = [];
-  array.forEach(function(i) {
-    if(!unique[i]) {
-      unique[i] = true;
-    }
-  });
-  return Object.keys(unique);
+ const uniqueArr = new Set(array);
+ const backToArray = [...uniqueArr];
+ return backToArray;
 }
-
 
 
 

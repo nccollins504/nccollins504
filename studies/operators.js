@@ -26,16 +26,16 @@ let x = 8 //x is assigned to 8
  */
 
 //Example:
-alert(true || true) //returns true
-alert(true || false) //returns true
-alert(false || false) //returns false
+console.log(true || true) //returns true
+console.log(true || false) //returns true
+console.log(false || false) //returns false
 
-alert(true && true) //returns true
-alert(true && false) //returns false
-alert(false && false) //returns false
+console.log(true && true) //returns true
+console.log(true && false) //returns false
+console.log(false && false) //returns false
 
-alert(!true) //returns false
-alert(!false) //returns true
+console.log(!true) //returns false
+console.log(!false) //returns true
 
 // 3. Arithmetic Operators //
 /*
@@ -50,19 +50,19 @@ alert(!false) //returns true
 //Example:
 let a = 5
 let b = 4
-return a + b //returns a + b which equals 9
+console.log(a + b) //returns a + b which equals 9
 
 let a1 = 6
 let b1 = 4
-return a - b // returns a1 - b1 which equaals 2
+console.log(a1 - b1) // returns a1 - b1 which equaals 2
 
 let a2 = 6
 let b2 = 8
-return a2 * b2 // returns a2 * b2 which equals 48
+console.log(a2 * b2) // returns a2 * b2 which equals 48
 
 let a3 = 40
 let b3 = 5
-return a3 / b3 //returns a3 / b3 which equals 8
+console.log(a3 / b3) //returns a3 / b3 which equals 8
 
 // 4. Comparison Operators //
 /*
